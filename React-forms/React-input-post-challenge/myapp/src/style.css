@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 196, 250);
+}
+
+form {
+    background-color: #fcfafa;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.342);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .75rem;
+}
+
+label {
+    margin-bottom: .5rem;
+    opacity: .7;
+    text-transform: lowercase;
+}
+
+input {
+    min-width: 100px;
+    width: 100%;
+    height: 1.6rem;
+    transition: outline-color .1s ease-in;
+    border: 1px solid rgb(196, 196, 250);
+    border-radius: 6px;
+}
+
+input:focus {
+    outline-color: rgb(176, 176, 248);
+}
+
+.public-place {
+    flex-direction: row;
+    gap: 20px;
+}
+
+#street {
+    width: 20rem;
+}
+
+#number,
+#state,
+#district,
+#city {
+    width: 3rem;
+}
+
+button {
+    padding: .5rem;
+    width: 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: rgb(196, 196, 250);
+    color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+button:hover {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
+    background-color: rgb(176, 176, 248);
+}
+
+button:active {
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.192)
+}
